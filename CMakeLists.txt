@@ -25,7 +25,13 @@ set(SFML_DIR "Dependencies/SFML-2.5.1/lib/cmake/SFML")
 
 find_package(SFML 2.5.1 COMPONENTS system graphics audio REQUIRED)
 
-add_executable(${PROJECT_NAME} src/Game.cpp src/main.cpp)
+add_executable(${PROJECT_NAME} 
+    src/GameData.cpp
+    src/GameLogic.cpp
+    src/GameView.cpp
+    src/Game.cpp 
+    src/main.cpp
+)
 
 target_include_directories(${PROJECT_NAME} 
     PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
