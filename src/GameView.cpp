@@ -8,8 +8,7 @@ namespace Kmk
 {
     namespace Minesweeper
     {
-        // TODO: Убрать абсолютный путь
-        const std::string GameView::_pathToTiles = "C:/Source/C++/MinesweeperSfml/assets/tiles.jpg";
+        const std::string GameView::_pathToTiles = "assets/tiles.jpg";
         const int GameView::_tileSideSize = 32;
 
         const std::string GameView::_gameName = "Minesweeper";
